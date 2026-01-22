@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.card{
+    background-image: url('../images/bg.png');
+}

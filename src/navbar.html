@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="m-4">
+  <nav class=" flex flex-col gap-8 lg:flex lg:flex-row lg:gap-24">
+    <div class="toggle-button text-[40px] lg:hidden">
+                <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+    <div >
+        <h1 class=" hidden lg:block  lg:bg-green-400 lg:text-white lg:text-4xl lg:px-6 lg:border-2 lg:border-green-700 lg:py-2 lg:ring-2 lg:ring-offset-2 lg:ring-green-950 lg:italic">XYZ School</h1>
+    </div>
+    <div class="flex flex-col gap-2 dropdown-menu absolute -top-full lg:static lg:flex lg:flex-row lg:gap-24">
+      
+         <!-- item list -->
+        <ul class="flex flex-col gap-2 lg:flex lg:flex-row lg:gap-24 lg:items-center justify-center ">
+          <li class="font-[poppins] font-medium text-[18px] leading-[28.5px] text-blue-300  hover:text-orange-500 cursor-pointer ">Home</li>
+          <li class="font-[poppins] font-medium text-[18px] leading-[28.5px] text-blue-300 hover:text-orange-500 cursor-pointer ">About</li>
+          <li class="font-[poppins] font-medium text-[18px] leading-[28.5px] text-blue-300 hover:text-orange-500 cursor-pointer " >Admission</li>
+          <li class="font-[poppins] font-medium text-[18px] leading-[28.5px] text-blue-300 hover:text-orange-500 cursor-pointer ">Contacts</li>
+        </ul>
+      
+      
+      <div class="flex flex-col gap-2 lg:flex lg:flex-row lg:gap-12 items-center">
+        <button class=" block border font-bold border-green-300 rounded-full px-4 py-2 text-blue-300 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500  focus:border-0">log in</button>
+        <button class=" block bg-orange-400 text-white font-bold border border-green-300 rounded-full px-4 py-2 hover:bg-orange-600 transition-colors duration-300 focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 active:bg-orange-600 " >Sign up</button>
+      </div>
+    </div>
+  </nav>  
+
+   <script>
+          const toggleBtn = document.querySelector(".toggle-button");
+          const dropdown = document.querySelector(".dropdown-menu");
+
+          toggleBtn.addEventListener("click", ()=>{
+            dropdown.classList.toggle('top-20');
+          })
+   </script>
+</body>
+</html>
